@@ -23,10 +23,10 @@ viewdir [^ player | Box no Target ] -> [^ Player | ^ Box ]
 viewdir [v player | Box no Target ] -> [v Player | v Box ]
 viewdir [< player | Box no target] -> [< Player | < Box ]
 
+(player can boop the cube)
+viewdir [action Player | Box] -> [Player | > Box]
+
 (Fireball can destroy crate)
 late [ Fireball Crate ] -> [ ]
 
-(pausewhenstationary.ru`:`lde)
-
-[Hud no Player] -> []
-late [Player no Hud]->[Player Hud]
+hudfollowsplayer.rule

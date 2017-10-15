@@ -101,12 +101,7 @@ red
 
 Fireball
 billboard
-red
-.....
-.....
-..0..
-.....
-.....
+fireball.png
 
 Death
 red

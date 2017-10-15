@@ -13,11 +13,17 @@ Box.voxel 20
 
 Hud
 hud
+roll
 hud.png
 
 Crate
 voxel
+easeout
 Crate.voxel 4
+
+DeadCrate
+sprite
+deadcrate.png
 
 Target 
 voxel

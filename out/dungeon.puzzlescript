@@ -694,6 +694,7 @@ throw
 
 Hud
 hud
+roll
 #7240a5 #854bbf #895eb8 #9755d9 #9c6bd1 #a85ef2 #af78eb #b10449 #be82ff #ff0366 
 ....................................................................................................
 ....................................................................................................
@@ -751,6 +752,7 @@ hud
 
 Crate
 voxel
+easeout
 #896623 #b78930 #cc9429 #daa94b 
 .
 &
@@ -963,6 +965,27 @@ voxel
 ................
 ................
 ................
+
+
+DeadCrate
+sprite
+#0c0717 #131741 #5d3f12 #937817 #bfa915 #e4b60c #f2ecca #f42a08 #f71106 #f7ede1 
+................
+................
+......9..9......
+.....9....9.....
+......99..9.....
+......99.9......
+.......9.9......
+..2...9...9.....
+..422.922.96....
+..4442279227355.
+...3343225565443
+.....55354344331
+..555544434333..
+554444436433....
+444433308334444.
+4431..1.6.13334.
 
 
 Target 
@@ -1615,6 +1638,7 @@ Background
 Ceiling
 Target
 Player, Wall, Box, Demon, Crate, hWall
+DeadCrate
 Stairs
 Fireball
 Demon1, Demon2, Demon3
@@ -1645,8 +1669,9 @@ late [ Fireball Player no Death] -> restart
 [Demon1 no DemonFlag] -> [Demon2 DemonFlag]
 late [DemonFlag] -> []
 
-(player can move a box around)
-[ >  Player | Crate ] -> [  >  Player | > Crate  ]     
+[ >  Player | Crate ] -> [  >  Player | > Crate  ] (player can move a crate around)
+late [ Fireball Crate ] -> [ DeadCrate ] (Fireball can destroy crate) 
+viewdir [ action Player | Crate] -> [Player | > Crate ] (player boop a crate) 
 
 (player can move a box around)
 [ >  Player | Box no Target] -> [  >  Player | > Box  ]     
@@ -1654,8 +1679,8 @@ viewdir [^ player | Box no Target ] -> [^ Player | ^ Box ]
 viewdir [v player | Box no Target ] -> [v Player | v Box ]
 viewdir [< player | Box no target] -> [< Player | < Box ]
 
-(Fireball can destroy crate)
-late [ Fireball Crate ] -> [ ]
+(player can boop the cube)
+viewdir [action Player | Box] -> [Player | > Box]
 
 [Hud no Player] -> []
 late [Player no Hud]->[Player Hud]

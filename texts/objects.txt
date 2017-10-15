@@ -1,5 +1,6 @@
 Background 
-grass.png
+voxel
+Grass.voxel 40
 
 Ceiling
 ceiling

@@ -30,4 +30,3 @@ for j in range(im.size[1]):
     line += legend_dict[curPixel.lower()]       
   print (line)
 #print("")
-

@@ -26,4 +26,4 @@ viewdir [< player | Box no target] -> [< Player | < Box ]
 (Fireball can destroy crate)
 late [ Fireball Crate ] -> [ ]
 
-pausewhenstationary.rule
+(pausewhenstationary.ru`:`lde)

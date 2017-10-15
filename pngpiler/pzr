@@ -1,0 +1,72 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+
+src_dir = "../src/"
+image_dir = "../images/"
+out_dir = "../out/"
+voxel_dir = "../voxels/"
+text_dir = "../texts/"
+rules_dir = "../rules/"
+levels_dir = "../levels/"
+game_file = "dungeon.puzzlescript"
+
+#pass0
+with open(src_dir+game_file) as f:
+  lines = f.read().splitlines()
+
+#pass1
+tlines = []
+for line in lines:
+  if (".txt" in line):
+    text_file = line.strip()
+    with open(text_dir+text_file) as f:
+      text_lines = f.read().splitlines()
+      tlines.extend(text_lines) 
+  else:
+    tlines.append(line)
+lines = tlines
+      
+#pass2
+out = []
+for line in lines:
+  if (".level" in line):
+    level_file = line.strip().split(".")[0]+".png"
+    level_lines = os.popen("./pngtolevel {}".format(level_file)).read().split('\n')
+    out.extend(level_lines)
+  elif (".png" in line):
+    sprite_file = line.strip()
+    sprite_lines = os.popen("./pngtosprite {}".format(image_dir+sprite_file)).read().split('\n')
+    out.extend(sprite_lines)
+  elif (".rule" in line):
+    rules_file = line.strip()
+    with open(rules_dir+rules_file) as f:
+      rules_lines = f.read().splitlines()
+      out.extend(rules_lines)
+  elif (".voxel" in line):
+    # get list of all files in the directory
+    voxel_list = line.strip().split(" ") # how many args
+    pad_top = False
+    if (len(voxel_list) > 1):
+      pad_top = True
+    if (pad_top):
+      voxel_file = voxel_list[0]
+      voxel_basename = voxel_file.split(".")[0] 
+      pad_arg = voxel_list[1]
+      voxel_lines = os.popen("./voxeltosprite {} {}".format(voxel_basename,pad_arg)).read().split('\n')
+      out.extend(voxel_lines)
+    else:
+      voxel_file = line.strip()
+      voxel_basename = line.split(".")[0]
+      voxel_lines = os.popen("./voxeltosprite {}".format(voxel_basename)).read().split('\n')
+      out.extend(voxel_lines)
+  else:
+    out.append(line)
+
+out_string = '\n'.join(out)
+
+with open(out_dir+game_file, 'w') as out_file:
+    out_file.write(out_string)
+
+os.system("cat {} | pbcopy".format(out_dir+game_file))

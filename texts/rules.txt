@@ -1,0 +1,27 @@
+setuplevel.rule
+
+late [Demon3 | no Fireball] -> [Demon3 | Fireball]
+[Fireball | Demon] -> [< Fireball | Demon]
+[Fireball | ... | Demon] -> [< Fireball | ... | Demon]
+[> Fireball] -> [> Fireball]
+[ Fireball Wall] -> [ Wall]
+late [ Fireball Player no Death] -> restart 
+[> player no Death | Fireball] -> restart 
+
+(cycle demon animation)
+[Demon3 no DemonFlag] -> [Demon1 DemonFlag]
+[Demon2 no DemonFlag] -> [Demon3 DemonFlag]
+[Demon1 no DemonFlag] -> [Demon2 DemonFlag]
+late [DemonFlag] -> []
+
+
+(player can move a box around)
+[ >  Player | Crate ] -> [  >  Player | > Crate  ]     
+
+(player can move a box around)
+[ >  Player | Box ] -> [  >  Player | > Box  ]     
+
+(Fireball can destroy crate)
+late [ Fireball Crate ] -> [ ]
+
+pausewhenstationary.rule

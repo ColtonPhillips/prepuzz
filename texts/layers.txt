@@ -1,0 +1,11 @@
+Background
+Ceiling
+Target
+Player, Wall, Box, Demon, Crate, hWall
+Stairs
+Fireball
+Demon1, Demon2, Demon3
+DemonFlag
+Temp
+Death
+

@@ -1,0 +1,5 @@
+message "How to Play: Use the Arrow Keys and ASDW keys to control your character."
+message "Goal: Bring all the Golem's Magical Cubes to their Alters and ascend the Stairs to the next level."
+message "Credits: Programming and Design: Colton Phillips. Sound:Adam Caflisch. Art: Rose Dubord-Goulet. Art and Design: Brandon Duncan."
+level1.level
+

@@ -13,7 +13,6 @@ Box.voxel 20
 
 Hud
 hud
-roll
 hud.png
 
 Crate
@@ -26,7 +25,7 @@ sprite
 deadcrate.png
 
 Target 
-voxel
+facingvoxel
 DarkBlue Black
 .
 &
@@ -107,6 +106,7 @@ red
 
 Fireball
 billboard
+easein
 fireball.png
 
 Death

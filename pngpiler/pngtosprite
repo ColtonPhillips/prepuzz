@@ -7,33 +7,29 @@ def addUnique(l,item):
 
 from PIL import Image
 import sys
-# dont print color if a second argument is given
-in_color_mode = True
-if (len(sys.argv) > 2):
-  in_color_mode = False
+
+#setuppixels
 im = Image.open(sys.argv[1]).convert('RGBA')
 pix = im.load()
 
-#first create the legend
-# Creates a list containing 5 lists initialized to 0
+#createcolorset
 out_l_l = [[0 for x in range(im.size[0])] for x in range(im.size[1])] 
 col_set = []
-
 for j in range(im.size[1]):
   for i in range(im.size[0]):
     r, g, b, a = pix[i,j]
     curPixel = '#%02x%02x%02x' % (r, g, b)
     if a != 0:
       addUnique(col_set, curPixel)
-
 col_set.sort()
 
+#printcolorset
 line = ""
 for item in col_set:
   line += item + " "
-if in_color_mode:
-  print (line)
+print (line)
 
+#print sprite (object)
 for j in range (im.size[1]):
   line = ""
   for i in range (im.size[0]):

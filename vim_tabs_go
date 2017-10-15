@@ -1,5 +1,5 @@
 #!/bin/sh
 
 vim -p pngpiler/pngtosprite pngpiler/voxeltosprite pngpiler/pngtolevel pngpiler/pzr
-vim -p src/dungeon.puzzlescript texts/prelude.txt texts/objects.txt
-
+vim -p src/dungeon.puzzlescript texts/prelude.txt texts/objects.txt texts/legend.txt texts/layers.txt texts/rules.txt texts/levels.txt
+vim -p pausewhenstationary.png setuplevel.rule

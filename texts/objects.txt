@@ -3,8 +3,8 @@ voxel
 Grass.voxel 40
 
 Ceiling
-ceiling
-ceiling.png
+voxel
+Roof.voxel
 
 Box
 voxel

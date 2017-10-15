@@ -16,7 +16,7 @@ view_distance 16
 view_pitch -12
 view_height 0.65
 scale_height 1.2
-field_of_view 110
+field_of_view 100
 
 gradient_top #839EA8
 gradient_middle #7BB8A5

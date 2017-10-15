@@ -2,7 +2,7 @@ setuplevel.rule
 
 late [Demon3 | no Fireball] -> [Demon3 | Fireball]
 [Fireball | Demon] -> [< Fireball | Demon]
-[Fireball | ... | Demon] -> [< Fireball | ... | Demon]
+[stationary Fireball | ... | Demon] -> [< Fireball | ... | Demon]
 [> Fireball] -> [> Fireball]
 [ Fireball Wall] -> [ Wall]
 late [ Fireball Player no Death] -> restart 
@@ -13,7 +13,6 @@ late [ Fireball Player no Death] -> restart
 [Demon2 no DemonFlag] -> [Demon3 DemonFlag]
 [Demon1 no DemonFlag] -> [Demon2 DemonFlag]
 late [DemonFlag] -> []
-
 
 (player can move a box around)
 [ >  Player | Crate ] -> [  >  Player | > Crate  ]     

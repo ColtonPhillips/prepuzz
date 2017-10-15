@@ -1647,6 +1647,9 @@ late [ Fireball Crate ] -> [ ]
 
 (pausewhenstationary.ru`:`lde)
 
+[Hud no Player] -> []
+late [Player no Hud]->[Player Hud]
+
 ==============
 WINCONDITIONS
 ==============

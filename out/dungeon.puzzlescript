@@ -1129,7 +1129,7 @@ late [Demon3 | no Fireball] -> [Demon3 | Fireball]
 [> Fireball] -> [> Fireball]
 [ Fireball Wall] -> [ Wall]
 late [ Fireball Player no Death] -> restart 
-[> player no Death | Fireball] -> restart 
+[> player no Death | < Fireball] -> restart 
 
 (cycle demon animation)
 [Demon3 no DemonFlag] -> [Demon1 DemonFlag]

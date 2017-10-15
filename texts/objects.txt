@@ -8,7 +8,7 @@ ceiling.png
 Box
 voxel
 throw
-Box.voxel 10
+Box.voxel 20
 
 Crate
 voxel

@@ -88,6 +88,26 @@ throw
 &
 .
 &
+.
+&
+.
+&
+.
+&
+.
+&
+.
+&
+.
+&
+.
+&
+.
+&
+.
+&
+.
+&
 .......
 .30303.
 .0...0.
@@ -1007,6 +1027,9 @@ late [DemonFlag] -> []
 
 (player can move a box around)
 [ >  Player | Box ] -> [  >  Player | > Box  ]     
+viewdir [^ player | Box ] -> [^ Player | ^ Box ]
+viewdir [v player | Box ] -> [v Player | v Box ]
+viewdir [< player | Box ] -> [< Player | < Box ]
 
 (Fireball can destroy crate)
 late [ Fireball Crate ] -> [ ]

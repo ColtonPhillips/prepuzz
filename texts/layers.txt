@@ -8,4 +8,5 @@ Demon1, Demon2, Demon3
 DemonFlag
 Temp
 Death
+Hud
 

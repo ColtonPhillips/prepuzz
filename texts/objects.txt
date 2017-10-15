@@ -11,6 +11,10 @@ voxel
 throw
 Box.voxel 20
 
+Hud
+hud
+hud.png
+
 Crate
 voxel
 Crate.voxel 4
@@ -66,7 +70,8 @@ Stairs.voxel 5
 
 Player 
 doublestep
-player.png
+Red
+.
 
 Temp
 Red

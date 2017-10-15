@@ -1,5 +1,5 @@
 # = Wall (#000000)
-P = Player (#0000FF)
+P = Player and Hud (#0000FF)
 7 = Stairs (#00FF00)
 O = Target (#00FFFF)
 @ = Box and Target (#123456)

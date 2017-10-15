@@ -4,8 +4,9 @@ Target
 Player, Wall, Box, Demon, Crate, hWall
 Stairs
 DeadCrate
+FireTrail, FireTrailSpawn
 Fireball
-Demon1, Demon2, Demon3
+Demon1, Demon2, Demon3, Demon4
 DemonFlag
 Temp
 Death

@@ -1580,6 +1580,27 @@ wall
 3322300000032233
 
 
+Demon4
+wall
+#161a27 #262b44 #3a4466 #3e8948 #5a6988 #800000 #ff0000 
+1222122222221222
+2111200000012111
+1110022442200111
+2202211441122012
+4402444444442024
+4014562442654104
+4014564224654104
+2014222112224102
+1014421441244101
+2204444224441012
+4401441111441024
+4401414004141044
+4220121111210422
+2110144224410211
+2211012222101121
+3322300000032233
+
+
 DemonFlag
 wall
 red
@@ -1606,6 +1627,22 @@ easein
 ......343388....
 .....24...8.....
 
+
+FireTrail
+billboard
+easein
+Red White
+.....
+.....
+..1..
+.101.
+..1..
+.....
+.....
+
+FireTrailSpawn
+red
+.
 
 Death
 red
@@ -1640,8 +1677,9 @@ Target
 Player, Wall, Box, Demon, Crate, hWall
 Stairs
 DeadCrate
+FireTrail, FireTrailSpawn
 Fireball
-Demon1, Demon2, Demon3
+Demon1, Demon2, Demon3, Demon4
 DemonFlag
 Temp
 Death
@@ -1655,7 +1693,7 @@ RULES
 
 ()
 
-late [Demon3 | no Fireball] -> [Demon3 | Fireball]
+late [Demon4 | no Fireball] -> [Demon4 | Fireball]
 [Fireball | Demon] -> [< Fireball | Demon]
 [stationary Fireball | ... | Demon] -> [< Fireball | ... | Demon]
 [> Fireball] -> [> Fireball]
@@ -1664,7 +1702,8 @@ late [ Fireball Player no Death] -> restart
 [> player no Death | < Fireball] -> restart 
 
 (cycle demon animation)
-[Demon3 no DemonFlag] -> [Demon1 DemonFlag]
+[Demon4 no DemonFlag] -> [Demon1 DemonFlag]
+[Demon3 no DemonFlag] -> [Demon4 DemonFlag]
 [Demon2 no DemonFlag] -> [Demon3 DemonFlag]
 [Demon1 no DemonFlag] -> [Demon2 DemonFlag]
 late [DemonFlag] -> []
@@ -1686,6 +1725,10 @@ viewdir [action Player | Box] -> [Player | > Box]
 
 [Hud no Player] -> []
 late [Player no Hud]->[Player Hud]
+
+[FireTrail] -> []
+[FireTrailspawn] -> [FireTrail]
+late [Fireball] -> [Fireball FireTrailSpawn]
 
 ==============
 WINCONDITIONS
@@ -1712,12 +1755,12 @@ D....-..#.###....---
 ###-#..-D-.--.....-#
 #77-....-...#....--#
 -.....#...#.#....###
--...-...---##....7-#
--XXX-------D......-#
-#...#-......X.....-#
+-...-...---##....7##
+-XXX----#--D....#.##
+#...#-......X...#.-#
 #...#..*....X.....-#
 #...--...........---
--.P.-#------------D#
+-.P.-#-----------#D#
 --#--############-#-
 
 ###############7################

@@ -99,6 +99,10 @@ Demon3
 wall
 demon3.png
 
+Demon4
+wall
+demon4.png
+
 DemonFlag
 wall
 red
@@ -108,6 +112,22 @@ Fireball
 billboard
 easein
 fireball.png
+
+FireTrail
+billboard
+easein
+Red White
+.....
+.....
+..1..
+.101.
+..1..
+.....
+.....
+
+FireTrailSpawn
+red
+.
 
 Death
 red

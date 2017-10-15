@@ -1,6 +1,6 @@
 setuplevel.rule
 
-late [Demon3 | no Fireball] -> [Demon3 | Fireball]
+late [Demon4 | no Fireball] -> [Demon4 | Fireball]
 [Fireball | Demon] -> [< Fireball | Demon]
 [stationary Fireball | ... | Demon] -> [< Fireball | ... | Demon]
 [> Fireball] -> [> Fireball]
@@ -9,7 +9,8 @@ late [ Fireball Player no Death] -> restart
 [> player no Death | < Fireball] -> restart 
 
 (cycle demon animation)
-[Demon3 no DemonFlag] -> [Demon1 DemonFlag]
+[Demon4 no DemonFlag] -> [Demon1 DemonFlag]
+[Demon3 no DemonFlag] -> [Demon4 DemonFlag]
 [Demon2 no DemonFlag] -> [Demon3 DemonFlag]
 [Demon1 no DemonFlag] -> [Demon2 DemonFlag]
 late [DemonFlag] -> []
@@ -30,3 +31,7 @@ viewdir [< player | Box no target] -> [< Player | < Box ]
 viewdir [action Player | Box] -> [Player | > Box]
 
 hudfollowsplayer.rule
+
+[FireTrail] -> []
+[FireTrailspawn] -> [FireTrail]
+late [Fireball] -> [Fireball FireTrailSpawn]

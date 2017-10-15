@@ -2,7 +2,7 @@ title The Golem's Labyrinth
 author Colton & Pals
 homepage www.coltonphillips.ca
 youtube jO-2-pI-BxU
-background_color #003000
+background_color #003020
 text_color red
 scanline
 
@@ -11,13 +11,12 @@ key_repeat_interval 0.62258
 again_interval 0.29032
 realtime_interval 2.48064
 
-view_distance 32
-fog_power 1
+view_distance 16
 
 view_pitch -12
-view_height 0.6
-scale_height 1.1
-field_of_view 114
+view_height 0.65
+scale_height 1.2
+field_of_view 110
 
 gradient_top #839EA8
 gradient_middle #7BB8A5

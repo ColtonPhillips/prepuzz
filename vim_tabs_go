@@ -1,0 +1,5 @@
+#!/bin/sh
+
+vim -p pngpiler/pngtosprite pngpiler/voxeltosprite pngpiler/pngtolevel pngpiler/pzr
+vim -p src/dungeon.puzzlescript texts/prelude.txt texts/objects.txt
+

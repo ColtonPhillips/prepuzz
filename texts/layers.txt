@@ -2,8 +2,8 @@ Background
 Ceiling
 Target
 Player, Wall, Box, Demon, Crate, hWall
-DeadCrate
 Stairs
+DeadCrate
 Fireball
 Demon1, Demon2, Demon3
 DemonFlag

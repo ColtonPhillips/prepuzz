@@ -1745,7 +1745,7 @@ message You are about to squat down in your remarkable hovel to ingest some fine
 message Season 2 is about to drop on Netflix. It's 12:05 AM and you just hit Refresh.
 message Your little sister enters the room.
 message "Let me play my game, big brother!"
-message "No, Lilah! I'm going to watch TV!"
+message "No, Lilah! I'm going to watch MY SHOW!"
 message "You never let me play my game!"
 message "I like this show more than you like that game, Lilah! I like it more!"
 message "No you don't!"
@@ -1753,7 +1753,7 @@ message In her small arms is a bundle of cords that so often begets your despoti
 message ... It is her "Plug n Play Games: Harry Potter and the Mystery of the Castle"...
 message ... You quicken to her and yank the console from her grasp.
 message "NO! DON'T!"
-message Like a dictator, you remove that which is most valuable from your lower stock cohabitor
+message Like a dictator, you remove that which is most valuable from your lower stock cohabitor.
 message "WHY DO YOU ALWAYS DO THIS!?!", she screams.
 message You place the shitty game system on a banister so high so that she can never reach it.
 message You hear a sound from behind you.
@@ -1762,23 +1762,46 @@ message Stunned, in cringe, you mock a chuckle. "Oh ya?", you turn around.
 message Lilah is dead. Her throat is slit. Her body is laying still on the ground. No sound occured.
 message You scream bloody murder. Suddenly you feel very alone.
 message The TV flicks on. Not the HD TV... The one you use to play Smash Bros, and store in the closet.
-message You look at the TV.
+message You look at the TV. It's not plugged in, but it flicks on.
 message It's dark, but you make out a grotesque program: 
 message Your sister...piercing the eye of what is clearly a Medusa. 
-message It's a magic wand. You see it's light fade away on the Medusa, rendering it a useless stick.
+message It's a magic wand. You see it's light fade away on the Medusa, rendering it a useless bloody stick.
 message The program's perspective suddenly changes, and your Gamecube powers on. 
 message "Holy SHIT!"
-message The controller extends far beyond it's reach and places itself into your hands.
+message The controller extends far beyond it's reach, dragging the Cube, and places itself into your hands.
 message With a great sigh you begin to press buttons. Your worst fear reveals itself.
-message You are controlling your sister,s movements in a video game from hell...
-message You tap a button, and what can only be desribed as a Help Menu pops into existence...
+message You are controlling your sister.
+message You tap a button, and what can only be desribed as a Help Menu, pops into existence...
 message GOTO https://goo.gl/Vfqg7a to learn how the game was made
 message Press the ASDW keys to move your character Left, Down, Right, and Up.
 message Press the Left and Right Arrow keys to Rotate your character.
 message You are in the Golem's Magical Castle. If you wish to escape, you must ascend.
 message Escape the cursed basement or Lilah will die.
 message Before the Staircase will open, you must place every Hexahedron into a Black Alter. Good luck.
+message The Hexahedron can be maneuvered, in 3 unique ways:
+message 1) You can push the Hexahedron
+message 2) You can slide the Hexahedron sideways, while holding it.
+message 3) You can push the Hexahedron and other objects by pressing the Space Bar when viewing it.
 message Credits: Programming and Design: Colton Phillips. Sound:Adam Caflisch. Art: Rose Dubord-Goulet. Art and Design: Brandon Duncan.
+message A tutorial level loads into existence and you begin to fumble with the gameplay mechanics.
+message To beat the tutorial, find all 3 Hexahedrons and lock them into the 3 Black Alters
+#.#-#-#-#-#-#-#-#-#-
+D....#.......X-777-#
+#.#..-........-...--
+-.-...........-...-#
+#X#.....*.....--.---
+-.-X.......----X.X-#
+#.#-###...-......-#-
+-....D-...-.-#-#-#-#
+#-#...#...#........-
+-.-#.#-...-#-#-#-#.#
+#..X..#...#.X.......
+-X-#-#-...-.-#-#-#-#
+#.#X*.....X........-
+-.-.OOO...-#-#-#-#.#
+#.#X..*............-
+-P-#-#-#-#-#-#-#-#-#
+
 
 ---###############--
 #-------#--------D#-

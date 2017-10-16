@@ -35,7 +35,14 @@ message Press the Left and Right Arrow keys to Rotate your character.
 message You are in the Golem's Magical Castle. If you wish to escape, you must ascend.
 message Escape the cursed basement or Lilah will die.
 message Before the Staircase will open, you must place every Hexahedron into a Black Alter. Good luck.
+message The Hexahedron can be maneuvered, in 3 unique ways:
+message 1) You can push the Hexahedron
+message 2) You can slide the Hexahedron sideways, while holding it.
+message 3) You can push the Hexahedron and other objects by pressing the Space Bar when viewing it.
 message Credits: Programming and Design: Colton Phillips. Sound:Adam Caflisch. Art: Rose Dubord-Goulet. Art and Design: Brandon Duncan.
+message A tutorial level loads into existence and you begin to fumble with the gameplay mechanics.
+message To beat the tutorial, find all 3 Hexahedrons and lock them into the 3 Black Alters
+tutorial.level
 
 level0.level
 level1.level

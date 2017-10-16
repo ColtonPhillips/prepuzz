@@ -11,4 +11,4 @@ DemonFlag
 Temp
 Death
 Hud
-
+TutorialTextCrate, TutorialTextSidestep, TutorialTextTime

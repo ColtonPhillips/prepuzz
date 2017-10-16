@@ -36,3 +36,7 @@ hudfollowsplayer.rule
 [FireTrail] -> []
 [FireTrailspawn] -> [FireTrail]
 late [Fireball] -> [Fireball FireTrailSpawn]
+
+[Player TutorialTextCrate] -> [Player] message Walk into Crates or Press Space to push them.
+[Player TutorialTextTime] -> [Player] message Fireballs will kill you. Evade them, and press Space to allow them to move first.
+[Player TutorialTextSidestep] -> [Player] message Look at the Hexahedron and Press A and D to sidestep the it out of the corners.

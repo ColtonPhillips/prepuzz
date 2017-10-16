@@ -1,5 +1,5 @@
 #!/bin/sh
-cd pngpiler
+cd compiler
 ./pzr
 cd ..
 osascript applescripts/pasteintoeditor.applescript

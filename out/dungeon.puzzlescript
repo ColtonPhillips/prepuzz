@@ -1601,6 +1601,27 @@ wall
 3322300000032233
 
 
+Demon5
+wall
+#161a27 #262b44 #3a4466 #3e8948 #5a6988 #800000 #ff0000 
+1222122222221222
+2111200000012111
+1110022442200111
+2202244444422012
+4402221441222024
+4014562442654104
+4014564224654104
+2014222112224102
+1014421441244101
+2204444224441012
+4401444444441024
+4401411111141044
+4220121111210422
+2110144224410211
+2211012222101121
+3322300000032233
+
+
 DemonFlag
 wall
 red
@@ -1679,7 +1700,7 @@ Stairs
 DeadCrate
 FireTrail, FireTrailSpawn
 Fireball
-Demon1, Demon2, Demon3, Demon4
+Demon1, Demon2, Demon3, Demon4, Demon5
 DemonFlag
 Temp
 Death
@@ -1702,7 +1723,8 @@ late [ Fireball Player no Death] -> restart
 [> player no Death | < Fireball] -> restart 
 
 (cycle demon animation)
-[Demon4 no DemonFlag] -> [Demon1 DemonFlag]
+[Demon5 no DemonFlag] -> [Demon1 DemonFlag]
+[Demon4 no DemonFlag] -> [Demon5 DemonFlag]
 [Demon3 no DemonFlag] -> [Demon4 DemonFlag]
 [Demon2 no DemonFlag] -> [Demon3 DemonFlag]
 [Demon1 no DemonFlag] -> [Demon2 DemonFlag]
@@ -1741,7 +1763,7 @@ All Player on Stairs
 LEVELS
 =======
 
-message You are about to squat down in your remarkable hovel to ingest some fine content.
+(message You are about to squat down in your remarkable hovel to ingest some fine content.
 message Season 2 is about to drop on Netflix. It's 12:05 AM and you just hit Refresh.
 message Your little sister enters the room.
 message "Let me play my game, big brother!"
@@ -1761,8 +1783,10 @@ message "Avada Kedavr!"
 message Stunned, in cringe, you mock a chuckle. "Oh ya?", you turn around.
 message Lilah is dead. Her throat is slit. Her body is laying still on the ground. No sound occured.
 message You scream bloody murder. Suddenly you feel very alone.
-message The TV flicks on. Not the HD TV... The one you use to play Smash Bros, and store in the closet.
+message The TV flicks on. Not the HD TV... The one you use to play Smash Bros, and store in the closet.)
+
 message You look at the TV. It's not plugged in, but it flicks on.
+(
 message It's dark, but you make out a grotesque program: 
 message Your sister...piercing the eye of what is clearly a Medusa. 
 message It's a magic wand. You see it's light fade away on the Medusa, rendering it a useless bloody stick.
@@ -1770,9 +1794,11 @@ message The program's perspective suddenly changes, and your Gamecube powers on.
 message "Holy SHIT!"
 message The controller extends far beyond it's reach, dragging the Cube, and places itself into your hands.
 message With a great sigh you begin to press buttons. Your worst fear reveals itself.
+)
 message You are controlling your sister.
 message You tap a button, and what can only be desribed as a Help Menu, pops into existence...
 message GOTO https://goo.gl/Vfqg7a to learn how the game was made
+message Press the Space button to enact the flow of time.
 message Press the ASDW keys to move your character Left, Down, Right, and Up.
 message Press the Left and Right Arrow keys to Rotate your character.
 message You are in the Golem's Magical Castle. If you wish to escape, you must ascend.
@@ -1786,10 +1812,10 @@ message Credits: Programming and Design: Colton Phillips. Sound:Adam Caflisch. A
 message A tutorial level loads into existence and you begin to fumble with the gameplay mechanics.
 message To beat the tutorial, find all 3 Hexahedrons and lock them into the 3 Black Alters
 #.#-#-#-#-#-#-#-#-#-
-D....#.......X-777-#
+D...*#.......X-777-#
 #.#..-........-...--
 -.-...........-...-#
-#X#.....*.....--.---
+#X#..........*--.---
 -.-X.......----X.X-#
 #.#-###...-......-#-
 -....D-...-.-#-#-#-#
@@ -1799,7 +1825,7 @@ D....#.......X-777-#
 -X-#-#-...-.-#-#-#-#
 #.#X*.....X........-
 -.-.OOO...-#-#-#-#.#
-#.#X..*............-
+#.#X...............-
 -P-#-#-#-#-#-#-#-#-#
 
 

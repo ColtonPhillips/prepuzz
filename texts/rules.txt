@@ -9,7 +9,8 @@ late [ Fireball Player no Death] -> restart
 [> player no Death | < Fireball] -> restart 
 
 (cycle demon animation)
-[Demon4 no DemonFlag] -> [Demon1 DemonFlag]
+[Demon5 no DemonFlag] -> [Demon1 DemonFlag]
+[Demon4 no DemonFlag] -> [Demon5 DemonFlag]
 [Demon3 no DemonFlag] -> [Demon4 DemonFlag]
 [Demon2 no DemonFlag] -> [Demon3 DemonFlag]
 [Demon1 no DemonFlag] -> [Demon2 DemonFlag]

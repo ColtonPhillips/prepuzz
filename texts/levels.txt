@@ -1,4 +1,4 @@
-message You are about to squat down in your remarkable hovel to ingest some fine content.
+(message You are about to squat down in your remarkable hovel to ingest some fine content.
 message Season 2 is about to drop on Netflix. It's 12:05 AM and you just hit Refresh.
 message Your little sister enters the room.
 message "Let me play my game, big brother!"
@@ -18,8 +18,10 @@ message "Avada Kedavr!"
 message Stunned, in cringe, you mock a chuckle. "Oh ya?", you turn around.
 message Lilah is dead. Her throat is slit. Her body is laying still on the ground. No sound occured.
 message You scream bloody murder. Suddenly you feel very alone.
-message The TV flicks on. Not the HD TV... The one you use to play Smash Bros, and store in the closet.
+message The TV flicks on. Not the HD TV... The one you use to play Smash Bros, and store in the closet.)
+
 message You look at the TV. It's not plugged in, but it flicks on.
+(
 message It's dark, but you make out a grotesque program: 
 message Your sister...piercing the eye of what is clearly a Medusa. 
 message It's a magic wand. You see it's light fade away on the Medusa, rendering it a useless bloody stick.
@@ -27,9 +29,11 @@ message The program's perspective suddenly changes, and your Gamecube powers on.
 message "Holy SHIT!"
 message The controller extends far beyond it's reach, dragging the Cube, and places itself into your hands.
 message With a great sigh you begin to press buttons. Your worst fear reveals itself.
+)
 message You are controlling your sister.
 message You tap a button, and what can only be desribed as a Help Menu, pops into existence...
 message GOTO https://goo.gl/Vfqg7a to learn how the game was made
+message Press the Space button to enact the flow of time.
 message Press the ASDW keys to move your character Left, Down, Right, and Up.
 message Press the Left and Right Arrow keys to Rotate your character.
 message You are in the Golem's Magical Castle. If you wish to escape, you must ascend.

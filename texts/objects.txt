@@ -103,6 +103,10 @@ Demon4
 wall
 demon4.png
 
+Demon5
+wall
+demon5.png
+
 DemonFlag
 wall
 red

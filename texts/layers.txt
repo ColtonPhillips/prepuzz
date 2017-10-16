@@ -6,7 +6,7 @@ Stairs
 DeadCrate
 FireTrail, FireTrailSpawn
 Fireball
-Demon1, Demon2, Demon3, Demon4
+Demon1, Demon2, Demon3, Demon4, Demon5
 DemonFlag
 Temp
 Death

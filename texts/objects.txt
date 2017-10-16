@@ -6,7 +6,15 @@ TutorialTextSidestep
 Red
 .
 
+TutorialTextBackup
+Red
+.
+
 TutorialTextTime
+Red
+.
+
+TutorialTextAlter
 Red
 .
 

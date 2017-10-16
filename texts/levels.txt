@@ -47,7 +47,8 @@ message Credits: Programming and Design: Colton Phillips. Sound:Adam Caflisch. A
 message A tutorial level loads into existence and you begin to fumble with the gameplay mechanics.
 message To beat the tutorial, find all 3 Hexahedrons and lock them into the 3 Black Alters
 tutorial.level
-
+message You complete the tutorial section. The game proceeds to Level 1.
+message "There will be no hints from here on out. Good luck.", the game reads.
 level0.level
 level1.level
 

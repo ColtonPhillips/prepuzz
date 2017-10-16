@@ -10,7 +10,7 @@ voxel_dir = "../voxels/"
 text_dir = "../texts/"
 rules_dir = "../rules/"
 levels_dir = "../levels/"
-game_file = "dungeon.puzzlescript"
+game_file = "dungeon.predude"
 
 #pass0
 with open(src_dir+game_file) as f:

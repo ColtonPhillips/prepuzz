@@ -47,6 +47,10 @@ TutorialTextAlter
 Red
 .
 
+TutorialTextStairs
+Red
+.
+
 Background 
 voxel
 #3e8948 #56a445 
@@ -1708,6 +1712,7 @@ T = Background and Ceiling and TutorialTextSidestep (#654321)
 1 = Background and Ceiling and TutorialTextTime (#432165)
 2 = Background and Ceiling and TutorialTextBackup (#321654)
 3 = Background and Ceiling and TutorialTextAlter (#216543)
+4 = Background and Ceiling and TutorialTextStairs (#165432)
 
 =======
 SOUNDS
@@ -1730,7 +1735,7 @@ DemonFlag
 Temp
 Death
 Hud
-TutorialTextCrate, TutorialTextSidestep, TutorialTextTime, TutorialTextBackup, TutorialTextAlter
+TutorialTextCrate, TutorialTextSidestep, TutorialTextTime, TutorialTextBackup, TutorialTextAlter, TutorialTextStairs
 
 ======
 RULES     
@@ -1782,6 +1787,9 @@ late [Fireball] -> [Fireball FireTrailSpawn]
 [Player TutorialTextSidestep] -> [Player] message Face the Hexahedron and Press A and D to sidestep the it out of the corners.
 [Player TutorialTextBackup] -> [Player] message Face the Hexahedron and Press Down Arrow or S to pull it out of the indentation.
 [Player TutorialTextAlter] -> [Player] message "These must be the 'Black Alters'!", you shriek.
+[Box no Target] [Player TutorialTextStairs] -> [Box] [Player] message "The Stairs! This is where I need to go... but not yet..."
+[Player TutorialTextStairs] -> [Player] message "The Stairs! I can ascend to the next level!"
+
 
 ==============
 WINCONDITIONS
@@ -1814,10 +1822,9 @@ message "Avada Kedavr!"
 message Stunned, in cringe, you mock a chuckle. "Oh ya?", you turn around.
 message Lilah is dead. Her throat is slit. Her body is laying still on the ground. No sound occured.
 message You scream bloody murder. Suddenly you feel very alone.
-message The TV flicks on. Not the HD TV... The one you use to play Smash Bros, and store in the closet.)
+message The TV flicks on. Not the HD TV... The one you use to play Smash Bros, and store in the closet.
 
 message You look at the TV. It's not plugged in, but it flicks on.
-(
 message It's dark, but you make out a grotesque program: 
 message Your sister...piercing the eye of what is clearly a Medusa. 
 message It's a magic wand. You see it's light fade away on the Medusa, rendering it a useless bloody stick.
@@ -1825,8 +1832,11 @@ message The program's perspective suddenly changes, and your Gamecube powers on.
 message "Holy SHIT!"
 message The controller extends far beyond it's reach, dragging the Cube, and places itself into your hands.
 message With a great sigh you begin to press buttons. Your worst fear reveals itself.
-)
 message You are controlling your sister.
+)
+message Sorry. This game's story is too long to demo right now. :)         TLDR:
+message Your sister gets sucked into a TV and you have to control her. 
+
 message You tap a button, and what can only be desribed as a Help Menu, pops into existence...
 message GOTO https://goo.gl/Vfqg7a to learn how the game was made
 message Press the Space button to enact the flow of time.
@@ -1846,7 +1856,7 @@ message To beat the tutorial, find all 3 Hexahedrons and lock them into the 3 Bl
 D...X#.......X-777-#
 #.#..-......---...--
 -.-T--.....2.*-...-#
-#X#.........----.---
+#X#.........----4---
 -.-*......-----X.X-#
 #.#-###...-......-#-
 -....D-...-.-#-#-#-#
@@ -1859,7 +1869,8 @@ D...X#.......X-777-#
 #.#X...............-
 -P-#-#-#-#-#-#-#-#-#
 
-
+message You complete the tutorial section. The game proceeds to Level 1.
+message "There will be no hints from here on out. Good luck.", the game reads.
 ---###############--
 #-------#--------D#-
 D....-..#.###....---

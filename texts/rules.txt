@@ -42,3 +42,6 @@ late [Fireball] -> [Fireball FireTrailSpawn]
 [Player TutorialTextSidestep] -> [Player] message Face the Hexahedron and Press A and D to sidestep the it out of the corners.
 [Player TutorialTextBackup] -> [Player] message Face the Hexahedron and Press Down Arrow or S to pull it out of the indentation.
 [Player TutorialTextAlter] -> [Player] message "These must be the 'Black Alters'!", you shriek.
+[Box no Target] [Player TutorialTextStairs] -> [Box] [Player] message "The Stairs! This is where I need to go... but not yet..."
+[Player TutorialTextStairs] -> [Player] message "The Stairs! I can ascend to the next level!"
+

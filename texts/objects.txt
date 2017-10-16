@@ -18,6 +18,10 @@ TutorialTextAlter
 Red
 .
 
+TutorialTextStairs
+Red
+.
+
 Background 
 voxel
 Grass.voxel 40

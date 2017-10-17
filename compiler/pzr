@@ -64,9 +64,9 @@ for line in lines:
   else:
     out.append(line)
 
+#prepareandsave
 out_string = '\n'.join(out)
-
 with open(out_dir+game_file, 'w') as out_file:
     out_file.write(out_string)
-
+#insertintoclipboardtoo!
 os.system("cat {} | pbcopy".format(out_dir+game_file))

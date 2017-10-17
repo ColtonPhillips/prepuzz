@@ -5,8 +5,8 @@ late [Demon4 | no Fireball] -> [Demon4 | Fireball]
 [stationary Fireball | ... | Demon] -> [< Fireball | ... | Demon]
 [> Fireball] -> [> Fireball]
 [ Fireball Wall] -> [ Wall]
-late [ Fireball Player no Death] -> restart 
-[> player no Death | < Fireball] -> restart 
+late [ Fireball Player] -> restart 
+[> player | < Fireball] -> restart 
 
 (cycle demon animation)
 [Demon5 no DemonFlag] -> [Demon1 DemonFlag]
@@ -17,16 +17,16 @@ late [ Fireball Player no Death] -> restart
 late [DemonFlag] -> []
 
 (crates)
-[ >  Player | Crate ] -> [  >  Player | > Crate  ] (player can move a crate around)
-late [ Fireball Crate ] -> [ DeadCrate ] (Fireball can destroy crate) 
-viewdir [ action Player | Crate Stairs] -> [Player | DeadCrate Stairs] (player boop a crate) 
-viewdir [ action Player | Crate] -> [Player | > Crate ] (player boop a crate) 
+[ >  Player | Crate] -> [  >  Player | > Crate] (player can move a crate around)
+late [Fireball Crate] -> [ DeadCrate] (Fireball can destroy crate) 
+viewdir [action Player | Crate Stairs] -> [Player | DeadCrate Stairs] (player boop a crate) 
+viewdir [action Player | Crate] -> [Player | > Crate] (player boop a crate) 
 
 (player can move a box around)
-[ >  Player | Box no Target] -> [  >  Player | > Box  ]     
-viewdir [^ player | Box no Target ] -> [^ Player | ^ Box ]
-viewdir [v player | Box no Target ] -> [v Player | v Box ]
-viewdir [< player | Box no target] -> [< Player | < Box ]
+[>  Player | Box no Target] -> [>  Player | > Box]     
+viewdir [^ player | Box no Target] -> [^ Player | ^ Box]
+viewdir [v player | Box no Target] -> [v Player | v Box]
+viewdir [< player | Box no target] -> [< Player | < Box]
 
 (player can boop the cube)
 viewdir [action Player | Box] -> [Player | > Box]
@@ -45,3 +45,5 @@ late [Fireball] -> [Fireball FireTrailSpawn]
 [Box no Target] [Player TutorialTextStairs] -> [Box] [Player] message "The Stairs! This is where I need to go... but not yet..."
 [Player TutorialTextStairs] -> [Player] message "The Stairs! I can ascend to the next level!"
 
+[stationary Player Stairs] [Box no Target] -> [Player Stairs] [Box] message "To open the Staircase, Move Every Hexahedron onto a Black Alter""
+[stationary Player Target] -> [Player Target] message "This is the Black Alter. Hexahedrons go here."

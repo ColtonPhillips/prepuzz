@@ -1,3 +1,5 @@
+(This dungeonscript was personally precreated by Colton Phillips' pretty puzzling prepuzz precompiler project for OrcaJam 2017)
+
 prelude.txt
 
 ========
@@ -16,6 +18,8 @@ legend.txt
 SOUNDS
 =======
 
+sounds.txt
+
 ================
 COLLISIONLAYERS
 ================
@@ -32,8 +36,7 @@ rules.txt
 WINCONDITIONS
 ==============
 
-All Target on Box     
-All Player on Stairs
+winconditions.txt
 
 =======     
 LEVELS

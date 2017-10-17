@@ -9,6 +9,5 @@ Fireball
 Demon1, Demon2, Demon3, Demon4, Demon5
 DemonFlag
 Temp
-Death
 Hud
 TutorialTextCrate, TutorialTextSidestep, TutorialTextTime, TutorialTextBackup, TutorialTextAlter, TutorialTextStairs

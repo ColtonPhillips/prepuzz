@@ -24,7 +24,7 @@ Red
 
 Background 
 voxel
-Grass.voxel 40
+Grass.voxel 22
 
 Ceiling
 voxel
@@ -42,7 +42,7 @@ hud.png
 Crate
 voxel
 easeout
-Crate.voxel 4
+Crate.voxel 6
 
 DeadCrate
 sprite
@@ -50,12 +50,24 @@ deadcrate.png
 
 Target 
 facingvoxel
-DarkBlue Black
-.
+DarkBlue Black white
+.2222.
+2....2
+2....2
+2....2
+.2222.
 &
-.
+.....0
+0....1
+.0....
+.0....
+0..00.
 &
-.
+.0.0.0
+..0...
+0....1
+.0....
+.0.0.0
 &
 .
 &
@@ -83,19 +95,17 @@ DarkBlue Black
 0....1
 000001
 
-
-
 Wall 
 wall
 wall.png
 
 hWall
 voxel
-hWall.voxel 16
+hWall.voxel 17
 
 Stairs
 voxel
-Stairs.voxel 5
+Stairs.voxel 6
 
 Player 
 doublestep
@@ -142,21 +152,21 @@ easein
 fireball.png
 
 FireTrail
-billboard
+sprite
 easein
-Red White
-.....
-.....
-..1..
-.101.
-..1..
-.....
-.....
+Red White yellow orange
+.........
+.........
+.........
+....0.2..
+..313....
+..21012..
+....313..
+..2.0....
+.........
+.........
+.........
 
 FireTrailSpawn
-red
-.
-
-Death
 red
 .

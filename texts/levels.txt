@@ -1,56 +1,73 @@
-(message You are about to squat down in your remarkable hovel to ingest some fine content.
-message Season 2 is about to drop on Netflix. It's 12:05 AM and you just hit Refresh.
+(Exposition dump)
+message Credits: Programming and Design: Colton Phillips. Sound:Adam Caflisch. Art: Rose Dubord-Goulet. Art and Design: Brandon Duncan.
+message You are about to squat down in your remarkable hovel to ingest some fine content.
+message Stranger Things Season 2 is about to drop on Netflix. It's 12:01 AM.
+message You hit Refresh. Eleven's face is on the Television.
 message Your little sister enters the room.
-message "Let me play my game, big brother!"
-message "No, Lilah! I'm going to watch MY SHOW!"
+message "Let me play my game, BEEFCAKE!"
+message "No, Lilah! I'm going to watch MY show!"
 message "You never let me play my game!"
-message "I like this show more than you like that game, Lilah! I like it more!"
-message "No you don't!"
-message In her small arms is a bundle of cords that so often begets your despotic mire...
+message "Yes I do", you cry", I like this show!"
+message "I like this show more than you like your dumb game, Lilah! I like it more!"
+message "No you don't! It's not dumb!"
+message "Yes it is!"
+message In her small arms is a bundle of cords that so often begets your despotic mire.
 message ... It is her "Plug n Play Games: Harry Potter and the Mystery of the Castle"...
 message ... You quicken to her and yank the console from her grasp.
 message "NO! DON'T!"
-message Like a dictator, you remove that which is most valuable from your lower stock cohabitor.
-message "WHY DO YOU ALWAYS DO THIS!?!", she screams.
-message You place the shitty game system on a banister so high so that she can never reach it.
-message You hear a sound from behind you.
-message "Avada Kedavr!"
+message You remove that which is most valuable from your lower stock cohabitor.
+message "WHY DO YOU ALWAYS DO THIS!!! YOU STUPID DICTATOR!!!", she screams.
+message You place the shitty game system on a banister that is so high that she cannot reach it.
+message "Avada Kedavr!", you hear her say. 
 message Stunned, in cringe, you mock a chuckle. "Oh ya?", you turn around.
-message Lilah is dead. Her throat is slit. Her body is laying still on the ground. No sound occured.
-message You scream bloody murder. Suddenly you feel very alone.
-message The TV flicks on. Not the HD TV... The one you use to play Smash Bros, and store in the closet.
-
-message You look at the TV. It's not plugged in, but it flicks on.
-message It's dark, but you make out a grotesque program: 
-message Your sister...piercing the eye of what is clearly a Medusa. 
-message It's a magic wand. You see it's light fade away on the Medusa, rendering it a useless bloody stick.
-message The program's perspective suddenly changes, and your Gamecube powers on. 
-message "Holy SHIT!"
-message The controller extends far beyond it's reach, dragging the Cube, and places itself into your hands.
-message With a great sigh you begin to press buttons. Your worst fear reveals itself.
-message You are controlling your sister.
-)
-message Sorry. This game's story is too long to demo right now. :)         TLDR:
-message Your sister gets sucked into a TV and you have to control her. 
-
-message You tap a button, and what can only be desribed as a Help Menu, pops into existence...
+message Lilah is dead. Her throat is slit. Her body is laying still on the ground. 
+message You stand in complete silence, as her corpse is fully bled out.
+message You scream a blood curdling scream.
+message Suddenly, you feel very alone.
+message A dim light in your closet draws your attention.
+message It is the cathode ray television that you bring every week to Super Smash Bros. Club at school.
+message "But... that's not even plugged into - ACK"
+message You are interrupted with shock, as your own Gamecube is assembling itself in front of you. 
+message Your instincts bring you to sit by your Television and hold the controller in your palms.
+message It's dark, but you make out a grotesque figure on the Television.
+message It is a Medusa, and your sister Lilah is under your direct player control. 
+message "Holy SHIT!", you say fumbling to understand the controls.
+message By pure luck, you press the correct set of buttons to attack the monster.
+message Lilah's wand becomes infused with real magic, and she stabs at the Medusa.
+message She pierces the Medusa's eye with the wand, casting fire upon it. 
+message The Medusa has died and the wand's bright light dissapears, rendering it a useless stick.
+message You tap the Start button. What can only be desribed as a "Help Menu", pops up on the TV.
+message "Play Tutorial?" 
+message In desperation, you agree.
+(Frontloaded Tutorial)
 message GOTO https://goo.gl/Vfqg7a to learn how the game was made
-message Press the Space button to enact the flow of time.
 message Press the ASDW keys to move your character Left, Down, Right, and Up.
 message Press the Left and Right Arrow keys to Rotate your character.
 message You are in the Golem's Magical Castle. If you wish to escape, you must ascend.
-message Escape the cursed basement or Lilah will die.
 message Before the Staircase will open, you must place every Hexahedron into a Black Alter. Good luck.
+message A tutorial level loads into existence and you begin to fumble with the gameplay mechanics.
+#####
+#777#
+#...#
+#...#
+#.O.#
+#...#
+#...#
+#...#
+#.*.#
+#...#
+#.P.#
+#...#
+#####
+message Press the Space button to enact the flow of time.
+message Escape the cursed basement or Lilah will die.
 message The Hexahedron can be maneuvered, in 3 unique ways:
 message 1) You can push the Hexahedron
 message 2) You can slide the Hexahedron sideways, while holding it.
 message 3) You can push the Hexahedron and other objects by pressing the Space Bar when viewing it.
-message Credits: Programming and Design: Colton Phillips. Sound:Adam Caflisch. Art: Rose Dubord-Goulet. Art and Design: Brandon Duncan.
-message A tutorial level loads into existence and you begin to fumble with the gameplay mechanics.
-message To beat the tutorial, find all 3 Hexahedrons and lock them into the 3 Black Alters
+message To beat this tutorial, find all 3 Hexahedrons and lock them into the 3 Black Alters
 tutorial.level
 message You complete the tutorial section. The game proceeds to Level 1.
 message "There will be no hints from here on out. Good luck.", the game reads.
 level0.level
 level1.level
-

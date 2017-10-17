@@ -1,24 +1,25 @@
 title Plug and Play Games: Harry Potter and the Mystical Castle
-author Colton & Pals
-homepage www.coltonphillips.ca
+author Colton & Pals (Rose, Adam, and Brandon too!)
+homepage www.coltonphillips.ca/plugandplay
 youtube jO-2-pI-BxU
 background_color #003020
 text_color red
 scanline
 
 throttle_movement
-key_repeat_interval 0.62258
-again_interval 0.29032
-realtime_interval 2.48064
+key_repeat_interval 0.49622
+again_interval 0.29032 (not used)
+realtime_interval 2.68064
 
 view_distance 16
 
-view_pitch -12
-view_height 0.65
-scale_height 1.2
-field_of_view 100
+view_pitch -10
+view_height 0.68
+scale_height 1.25
+field_of_view 105
 
 gradient_top #839EA8
 gradient_middle #7BB8A5
 gradient_bottom #B5B8FF
+
 noundo

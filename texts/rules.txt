@@ -1,5 +1,9 @@
 setuplevel.rule
 
+[Ghost | ... | Player] -> [> Ghost | ...|  Player]
+[Ghost | Player] -> [> Ghost | Player]
+[Ghost Player] -> [Player]
+
 [FalseWall no FalseWallCollider] -> []
 [FalseWallCollider no FalseWall] -> []
 viewdir [FalseWall | action Player ] -> [v FalseWall  | Player] 

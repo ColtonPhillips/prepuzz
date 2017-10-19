@@ -1,5 +1,5 @@
 # = Wall (#000000)
-$ = FalseWall and FalseWallCollider (#00000F)
+$ = FalseWall and FalseWallCollider and Ghost (#00000F)
 P = Player and Hud (#0000FF)
 7 = Stairs (#00FF00)
 O = Target (#00FFFF)

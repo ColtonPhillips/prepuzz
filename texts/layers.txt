@@ -2,6 +2,7 @@ Background
 Ceiling
 Target
 FalseWall
+Ghost
 Player, FalseWallCollider, Wall, Box, Demon, Crate, hWall
 Stairs
 DeadCrate

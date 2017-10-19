@@ -7,7 +7,7 @@ text_color red
 scanline
 
 throttle_movement
-key_repeat_interval 0.49622
+key_repeat_interval 0.4622
 again_interval 0.29032 (not used)
 realtime_interval 2.68064
 

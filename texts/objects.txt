@@ -1,3 +1,12 @@
+FalseWallCollider
+Red
+.
+
+FalseWall
+wall
+easein
+wall.png
+
 TutorialTextCrate
 Red
 .

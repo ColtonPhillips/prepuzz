@@ -1,5 +1,10 @@
 setuplevel.rule
 
+[FalseWall no FalseWallCollider] -> []
+[FalseWallCollider no FalseWall] -> []
+viewdir [FalseWall | action Player ] -> [v FalseWall  | Player] 
+[FalseWall | moving Player ] -> [v FalseWall  | Player] 
+
 late [Demon4 | no Fireball] -> [Demon4 | Fireball]
 [Fireball | Demon] -> [< Fireball | Demon]
 [stationary Fireball | ... | Demon] -> [< Fireball | ... | Demon]

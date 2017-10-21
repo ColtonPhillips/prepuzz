@@ -2,8 +2,9 @@ Background
 Ceiling
 Target
 FalseWall
+Door
 Ghost
-Player, FalseWallCollider, Wall, Box, Demon, Crate, hWall, Door
+Player, DoorCollider, FalseWallCollider, Wall, Box, Demon, Crate, hWall
 Stairs
 DeadCrate
 FireTrail, FireTrailSpawn

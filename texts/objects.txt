@@ -6,6 +6,10 @@ Door
 voxel
 Door.voxel 3
 
+DoorCollider
+Red
+.
+
 Ghost
 sprite
 easein

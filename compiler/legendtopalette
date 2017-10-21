@@ -2,4 +2,15 @@
 
 from pzr_utils import *
 
+legend_dict = get_legend_dict()
+hcolor_list = list(legend_dict.keys())
+hcolor_list.sort()
+w = h = len(legend_dict)
+im = Image.new("RGBA",(w,h), None)
+for j in range (h):
+  for i in range (w):
+    hcolor = hcolor_list[i]
+    im.putpixel((i,j), hex_to_rgba(hcolor))
+im.save(out_dir+"palette.png")
 
+write_sorted_legend()

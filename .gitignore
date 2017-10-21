@@ -3,3 +3,4 @@ out/**
 out/dungeon.puzzlescript
 **.swp
 compiler/__pycache__
+images/.DS_Store

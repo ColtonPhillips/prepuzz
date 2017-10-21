@@ -98,3 +98,15 @@ def get_legend_dict():
     color = line_list[-1].lstrip("(").rstrip(")")
     legend_dict[color.lower()] = line_list[0]
   return legend_dict
+
+def write_sorted_legend():
+  legend_lines = file_to_lines(legend_file)
+  legend_lines.sort(key = lambda x: x.strip().split(" ")[-1])
+  write_list_to_file(legend_lines,out_dir+"sorted_legend.txt")
+
+def hex_to_rgba(value):
+  value = value.lstrip('#')
+  lv = len(value)
+  t = list(int(value[i:i + lv // 3], 16) for i in range(0, lv, lv // 3))
+  t.append(255)
+  return tuple(t)

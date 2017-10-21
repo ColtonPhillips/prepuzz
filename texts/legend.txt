@@ -18,4 +18,3 @@ T = Background and Ceiling and TutorialTextSidestep (#654321)
 2 = Background and Ceiling and TutorialTextBackup (#321654)
 3 = Background and Ceiling and TutorialTextAlter (#216543)
 4 = Background and Ceiling and TutorialTextStairs (#165432)
-CollidableObject = Wall or DoorCollider or Box or HWall or Crate or Demon or CrumbleWall or FalseWallCollider

@@ -1,0 +1,2 @@
+
+CollidableObject = Wall or DoorCollider or Box or HWall or Crate or Demon or CrumbleWall or FalseWallCollider

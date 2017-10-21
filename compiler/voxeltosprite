@@ -21,9 +21,17 @@ import re
 
 #findthepad?
 pad_top = False
-if (len(sys.argv) > 2):
+pad_bottom = False
+top_pad = 0
+bottom_pad = 0
+if (len(sys.argv) == 3):
   pad_top = True
   top_pad = int(sys.argv[2])
+elif (len(sys.argv) == 4):
+  pad_top= True
+  top_pad = int(sys.argv[2])
+  pad_bottom = True
+  bottom_pad = int(sys.argv[3])
 
 #getpngsfromfilesystem
 voxel_dir = voxel_dir+sys.argv[1]
@@ -63,9 +71,10 @@ w = im.size[0]
 h = im.size[1]
 
 #printtoppaddingifany
-if pad_top:
+if pad_top and top_pad != 0:
   for i in range(top_pad-1):
-    print(".\n&")
+    print(".")
+    print("&")
   print(".\n&")
   
 #printindex0
@@ -97,3 +106,9 @@ for f in voxel_files[1:]:
         curPixel = '#%02x%02x%02x' % (r, g, b)
         line += str(col_set.index(curPixel))
     print(line)
+
+#printbottompadding
+if pad_bottom and bottom_pad != 0:
+  for i in range(bottom_pad-1):
+    print("&")
+    print(".")

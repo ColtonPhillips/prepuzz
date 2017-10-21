@@ -54,13 +54,23 @@ for line in lines:
     # get list of all files in the directory
     voxel_list = line.strip().split(" ") # how many args
     pad_top = False
-    if (len(voxel_list) > 1):
+    pad_bottom = False
+    if (len(voxel_list) == 2):
       pad_top = True
+    elif (len(voxel_list) == 3):
+      pad_bottom = True
     if (pad_top):
       voxel_file = voxel_list[0]
       voxel_basename = voxel_file.split(".")[0] 
       pad_arg = voxel_list[1]
       voxel_lines = os.popen("./voxeltosprite {} {}".format(voxel_basename,pad_arg)).read().split('\n')
+      out.extend(voxel_lines)
+    elif (pad_bottom):
+      voxel_file = voxel_list[0]
+      voxel_basename = voxel_file.split(".")[0] 
+      top_pad_arg = voxel_list[1]
+      bottom_pad_arg = voxel_list[2]
+      voxel_lines = os.popen("./voxeltosprite {} {} {}".format(voxel_basename,top_pad_arg, bottom_pad_arg)).read().split('\n')
       out.extend(voxel_lines)
     else:
       voxel_file = line.strip()

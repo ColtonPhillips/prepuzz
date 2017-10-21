@@ -9,7 +9,7 @@ Grass.voxel 22
 
 Ceiling
 voxel
-Roof.voxel
+Roof.voxel 0 17
 
 Box
 voxel

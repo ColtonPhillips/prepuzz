@@ -17,30 +17,17 @@ elif (len(sys.argv) == 4):
 
 #getpngsfromfilesystem
 voxel_dir = voxel_dir+sys.argv[1]
-voxel_files = []
-voxel_list = os.listdir(voxel_dir)
-voxel_list.sort(key=natural_keys)
-for f in voxel_list:
-  if f.endswith(".png"):
-    voxel_files.append(os.path.join(voxel_dir,f))
+voxel_files = sorted_files_in_folder(".png",voxel_dir)
     
-#parseimagetofindcollectivecolorset
-col_set = []
+#parseimagetofindcollectivecolorset XXX has to be done in case top voxel doesnt contain all the colors ;)
+col_set= []
 for f in voxel_files:
-  pix, w, h = pixels_w_h(f)
-  out_l_l = [[0 for x in range(w)] for x in range(h)] 
-  for j in range(h):
-    for i in range(w):
-      r, g, b, a, hcolor = rgbah(pix,i,j)
-      if a != 0:
-        addUnique(col_set, hcolor)
-col_set.sort()
+  pix, w, h, cur_col_set = pixels_whc(f)
+  for c in cur_col_set:
+    addUnique(col_set,c)
 
 # printcolorset
-line = ""
-for item in col_set:
-  line += item + " "
-print (line)
+print_hcolor_list(col_set)
 
 #printtoppaddingifany
 if pad_top and top_pad != 0:

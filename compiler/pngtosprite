@@ -9,10 +9,9 @@ out_l_l = [[0 for x in range(w)] for x in range(h)]
 col_set = []
 for j in range(h):
   for i in range(w):
-    r, g, b, a = pix[i,j]
-    curPixel = '#%02x%02x%02x' % (r, g, b)
+    r, g, b, a, hcolor = rgbah(pix,i,j) 
     if a != 0:
-      addUnique(col_set, curPixel)
+      addUnique(col_set, hcolor)
 col_set.sort()
 
 #printcolorset
@@ -25,10 +24,9 @@ print (line)
 for j in range (h):
   line = ""
   for i in range (w):
-    r,g,b,a = pix[i,j]
+    r, g, b, a, hcolor = rgbah(pix,i,j)
     if (a == 0):
       line += "."
     else:
-      curPixel = '#%02x%02x%02x' % (r, g, b)
-      line += str(col_set.index(curPixel))
+      line += str(col_set.index(hcolor))
   print(line)

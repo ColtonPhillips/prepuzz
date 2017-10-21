@@ -42,3 +42,8 @@ def natural_keys(text):
 def pixels_w_h(image_path):
   im = Image.open(image_path).convert('RGBA')
   return im.load(), im.size[0], im.size[1]
+
+def rgbah(pix, i, j):
+  r, g, b, a = pix[i,j]
+  curPixel = '#%02x%02x%02x' % (r, g, b)
+  return r, g, b, a, curPixel

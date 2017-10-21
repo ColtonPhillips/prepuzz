@@ -6,7 +6,8 @@ viewdir [>  Player | CrumbleWall ] -> [Player | DeadCrate]
 [Door no DoorCollider] -> []
 [DoorCollider no Door] -> []
 viewdir [Key | Door] [action Player] ->[|v Door] [Player]
-[Key < Player] -> [< Key < Player]
+[no CollidableObject |Key < Player] -> [| < Key < Player]
+
 
 [Ghost | ... | Player] -> [> Ghost | ...|  Player]
 [Ghost | Player] -> [> Ghost | Player]

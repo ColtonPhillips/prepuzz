@@ -1,3 +1,14 @@
+IceState
+Blue
+.
+
+SuckPlayer
+Red 
+0
+
+Ice
+ice.png
+
 CrumbleWall
 wall
 crumblewall.png
@@ -20,7 +31,11 @@ sprite
 easein
 ghost.png
 
-Background 
+Background
+Red
+.
+
+BackgroundVisuals
 voxel
 Grass.voxel 22
 

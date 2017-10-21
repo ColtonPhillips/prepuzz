@@ -1,4 +1,8 @@
 setuplevel.rule
+[> Player no IceState | Ice | no CollidableObject]-> [> Player | IceState Ice | SuckPlayer]
+late [Player IceState no Ice ] [SuckPlayer] -> [Player ] []
+[Player IceState Ice | stationary SuckPlayer] -> [> Player > IceState Ice | > SuckPlayer]
+late [Player IceState ] [SuckPlayer CollidableObject] -> [Player] [CollidableObject]
 
 viewdir [action Player | CrumbleWall ] -> [Player | DeadCrate]
 viewdir [>  Player | CrumbleWall ] -> [Player | DeadCrate]

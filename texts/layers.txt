@@ -1,5 +1,7 @@
 Background
+BackgroundVisuals
 Ceiling
+Ice
 Target
 FalseWall
 Door
@@ -15,3 +17,5 @@ Temp
 Hud
 TutorialTextCrate, TutorialTextSidestep, TutorialTextTime, TutorialTextBackup, TutorialTextAlter, TutorialTextStairs
 Key
+SuckPlayer
+IceState

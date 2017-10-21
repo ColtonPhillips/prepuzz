@@ -10,20 +10,37 @@ voxel_dir = "../voxels/"
 text_dir = "../texts/"
 rules_dir = "../rules/"
 levels_dir = "../levels/"
+objects_dir = "../objects/"
 game_file = "dungeon.predude"
 
+def file_to_lines(file_path):
+  with open(file_path) as f:
+    return f.read().splitlines()
+
+def files_in_folder(extension, folder):
+  files = []
+  for f in os.listdir(folder):
+    if f.endswith(extension):
+      files.append(os.path.join(folder, f))
+  return files
+
 #pass0
-with open(src_dir+game_file) as f:
-  lines = f.read().splitlines()
+lines = file_to_lines(src_dir+game_file)
 
 #pass1
 tlines = []
 for line in lines:
   if (".txt" in line):
     text_file = line.strip()
-    with open(text_dir+text_file) as f:
-      text_lines = f.read().splitlines()
-      tlines.extend(text_lines) 
+    text_lines = file_to_lines(text_dir+text_file)
+    tlines.extend(text_lines) 
+  elif (".object" in line):
+    object_files = files_in_folder(".o",objects_dir)
+    for f in object_files:
+      tlines.append("")
+      o_lines = file_to_lines(f)
+      tlines.extend(o_lines)
+      tlines.append("")
   else:
     tlines.append(line)
 lines = tlines
@@ -41,9 +58,8 @@ for line in lines:
     out.extend(sprite_lines)
   elif (".rule" in line):
     rules_file = line.strip()
-    with open(rules_dir+rules_file) as f:
-      rules_lines = f.read().splitlines()
-      out.extend(rules_lines)
+    rules_lines = file_to_lines(rules_dir+rules_file)
+    out.extend(rules_lines)
   elif (".voxel" in line):
     # get list of all files in the directory
     voxel_list = line.strip().split(" ") # how many args

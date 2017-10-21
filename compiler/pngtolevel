@@ -4,11 +4,14 @@ import os
 import sys
 from PIL import Image
 
+def file_to_lines(file_path):
+  with open(file_path) as f:
+    return f.read().splitlines()
+
 #construct dict of chars to colors
 legend_dict = {}
 legend_file = "../texts/legend.txt"
-with open(legend_file) as f:
-  legend_lines = f.read().splitlines()
+legend_lines = file_to_lines(legend_file)
 for line in legend_lines:
   line_list = line.strip().split(" ")
   color = line_list[-1].lstrip("(").rstrip(")")

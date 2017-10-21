@@ -1,13 +1,8 @@
 #!/usr/bin/env python3
-
-import os
-import sys
-from PIL import Image
 from pzr_utils import *
 
 #construct dict of chars to colors
 legend_dict = {}
-legend_file = "../texts/legend.txt"
 legend_lines = file_to_lines(legend_file)
 for line in legend_lines:
   line_list = line.strip().split(" ")
@@ -16,10 +11,7 @@ for line in legend_lines:
 
 #print the level
 level_file = "../levels/"+sys.argv[1]
-im = Image.open(level_file).convert('RGBA')
-pix = im.load()
-w = im.size[0]
-h = im.size[1]
+pix, w, h = pixels_w_h(level_file)
 line = ""
 for j in range(h):
   line = ""
@@ -31,4 +23,3 @@ for j in range(h):
       continue
     line += legend_dict[curPixel.lower()]       
   print (line)
-#print("")

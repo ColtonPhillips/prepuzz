@@ -1,5 +1,9 @@
 setuplevel.rule
 
+(todo: add door animation)
+[Key | Door] [action Player] ->[|] [Player]
+[Key < Player] -> [< Key < Player]
+
 [Ghost | ... | Player] -> [> Ghost | ...|  Player]
 [Ghost | Player] -> [> Ghost | Player]
 [Ghost Player] -> [Player]

@@ -1,3 +1,7 @@
+Key
+billboard
+key.png
+
 Door
 voxel
 Door.voxel 3

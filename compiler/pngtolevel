@@ -3,10 +3,7 @@
 import os
 import sys
 from PIL import Image
-
-def file_to_lines(file_path):
-  with open(file_path) as f:
-    return f.read().splitlines()
+from pzr_utils import *
 
 #construct dict of chars to colors
 legend_dict = {}

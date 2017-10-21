@@ -2,6 +2,7 @@
 
 import os
 import sys
+from pzr_utils import *
 
 src_dir = "../src/"
 image_dir = "../images/"
@@ -12,17 +13,6 @@ rules_dir = "../rules/"
 levels_dir = "../levels/"
 objects_dir = "../objects/"
 game_file = "dungeon.predude"
-
-def file_to_lines(file_path):
-  with open(file_path) as f:
-    return f.read().splitlines()
-
-def files_in_folder(extension, folder):
-  files = []
-  for f in os.listdir(folder):
-    if f.endswith(extension):
-      files.append(os.path.join(folder, f))
-  return files
 
 #pass0
 lines = file_to_lines(src_dir+game_file)

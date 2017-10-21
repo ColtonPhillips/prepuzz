@@ -11,7 +11,7 @@ for line in legend_lines:
 
 #print the level
 level_file = "../levels/"+sys.argv[1]
-pix, w, h = pixels_w_h(level_file)
+pix, w, h, col_set = pixels_whc(level_file)
 line = ""
 for j in range(h):
   line = ""

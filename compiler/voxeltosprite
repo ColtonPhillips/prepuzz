@@ -16,8 +16,7 @@ elif (len(sys.argv) == 4):
   bottom_pad = int(sys.argv[3])
 
 #getpngsfromfilesystem
-voxel_dir = voxel_dir+sys.argv[1]
-voxel_files = sorted_files_in_folder(".png",voxel_dir)
+voxel_files = sorted_files_in_folder(".png",voxel_dir+sys.argv[1])
     
 #parseimagetofindcollectivecolorset XXX has to be done in case top voxel doesnt contain all the colors ;)
 col_set= []
@@ -37,30 +36,14 @@ if pad_top and top_pad != 0:
   print(".\n&")
   
 #printindex0
-pix, w, h = pixels_w_h(voxel_files[0])
-for j in range (h):
-  line = ""
-  for i in range (w):
-    r, g, b, a, hcolor = rgbah(pix,i,j)
-    if (a == 0):
-      line += "."
-    else:
-      line += str(col_set.index(hcolor))
-  print(line)
+pix, w, h, _ = pixels_whc(voxel_files[0])
+print_sprite_object(col_set,pix,w,h)
 
 #printindex1-n
 for f in voxel_files[1:]:
   print("&")
-  pix, w, h = pixels_w_h(f)
-  for j in range (h):
-    line = ""
-    for i in range (w):
-      r, g, b, a, hcolor = rgbah(pix,i,j)
-      if (a == 0):
-        line += "."
-      else:
-        line += str(col_set.index(hcolor))
-    print(line)
+  pix, w, h, _ = pixels_whc(f)
+  print_sprite_object(col_set,pix,w,h)
 
 #printbottompadding
 if pad_bottom and bottom_pad != 0:

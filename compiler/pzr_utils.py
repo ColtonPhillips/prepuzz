@@ -48,10 +48,6 @@ def addUnique(l,item):
     l.append(item)
   return l
 
-def pixels_w_h(image_path):
-  im = Image.open(image_path).convert('RGBA')
-  return im.load(), im.size[0], im.size[1]
-
 def pixels_whc(image_path):
   im = Image.open(image_path).convert('RGBA')
   pix = im.load()

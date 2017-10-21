@@ -3,7 +3,7 @@ Ceiling
 Target
 FalseWall
 Ghost
-Player, FalseWallCollider, Wall, Box, Demon, Crate, hWall
+Player, FalseWallCollider, Wall, Box, Demon, Crate, hWall, Door
 Stairs
 DeadCrate
 FireTrail, FireTrailSpawn

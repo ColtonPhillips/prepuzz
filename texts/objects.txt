@@ -1,3 +1,7 @@
+Door
+voxel
+Door.voxel 3
+
 Ghost
 sprite
 easein

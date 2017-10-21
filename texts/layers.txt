@@ -4,7 +4,7 @@ Target
 FalseWall
 Door
 Ghost
-Player, DoorCollider, FalseWallCollider, Wall, Box, Demon, Crate, hWall
+Player, DoorCollider, FalseWallCollider, Wall, Box, Demon, Crate, hWall, CrumbleWall
 Stairs
 DeadCrate
 FireTrail, FireTrailSpawn

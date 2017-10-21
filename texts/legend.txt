@@ -1,4 +1,5 @@
 # = Wall (#000000)
+% = CrumbleWall (#F1F1F1)
 $ = FalseWall and FalseWallCollider and Ghost (#00000F)
 P = Player and Hud (#0000FF)
 7 = Stairs (#00FF00)

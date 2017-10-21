@@ -1,6 +1,8 @@
 setuplevel.rule
 
-(todo: add door animation)
+viewdir [action Player | CrumbleWall ] -> [Player | DeadCrate]
+viewdir [>  Player | CrumbleWall ] -> [Player | DeadCrate]
+
 [Door no DoorCollider] -> []
 [DoorCollider no Door] -> []
 viewdir [Key | Door] [action Player] ->[|v Door] [Player]

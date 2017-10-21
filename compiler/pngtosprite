@@ -2,9 +2,8 @@
 
 from pzr_utils import *
 
-pix, w, h, col_set = pixels_whc(sys.argv[1])
-
 #printcolorset
+pix, w, h, col_set = pixels_whc(sys.argv[1])
 print_hcolor_list(col_set)
 
 #print sprite (object)

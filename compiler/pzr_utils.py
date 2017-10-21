@@ -84,3 +84,17 @@ def print_sprite_object(col_set,pix,w,h):
       else:
         line += str(col_set.index(hcolor))
     print(line)
+
+def write_list_to_file(li,fi):
+  out_string = '\n'.join(li)
+  with open(fi, 'w') as out_file:
+      out_file.write(out_string)
+
+def get_legend_dict():
+  legend_dict = {}
+  legend_lines = file_to_lines(legend_file)
+  for line in legend_lines:
+    line_list = line.strip().split(" ")
+    color = line_list[-1].lstrip("(").rstrip(")")
+    legend_dict[color.lower()] = line_list[0]
+  return legend_dict

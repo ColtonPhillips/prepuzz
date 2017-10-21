@@ -18,10 +18,12 @@ for line in legend_lines:
 level_file = "../levels/"+sys.argv[1]
 im = Image.open(level_file).convert('RGBA')
 pix = im.load()
+w = im.size[0]
+h = im.size[1]
 line = ""
-for j in range(im.size[1]):
+for j in range(h):
   line = ""
-  for i in range(im.size[0]):
+  for i in range(w):
     r, g, b, a = pix[i, j]
     curPixel = curPixel = '#%02x%02x%02x' % (r, g, b)
     if (a == 0):

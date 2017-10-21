@@ -39,9 +39,11 @@ col_set = []
 for f in voxel_files:
   im = Image.open(f).convert('RGBA')
   pix = im.load()
-  out_l_l = [[0 for x in range(im.size[0])] for x in range(im.size[1])] 
-  for j in range(im.size[1]):
-    for i in range(im.size[0]):
+  w = im.size[0]
+  h = im.size[1]
+  out_l_l = [[0 for x in range(w)] for x in range(h)] 
+  for j in range(h):
+    for i in range(w):
       r, g, b, a = pix[i,j]
       curPixel = '#%02x%02x%02x' % (r, g, b)
       if a != 0:
@@ -57,6 +59,8 @@ print (line)
 #setuppixels
 im = Image.open(voxel_files[0]).convert('RGBA')
 pix = im.load()
+w = im.size[0]
+h = im.size[1]
 
 #printtoppaddingifany
 if pad_top:
@@ -65,9 +69,9 @@ if pad_top:
   print(".\n&")
   
 #printindex0
-for j in range (im.size[1]):
+for j in range (h):
   line = ""
-  for i in range (im.size[0]):
+  for i in range (w):
     r,g,b,a = pix[i,j]
     if (a == 0):
       line += "."
@@ -81,9 +85,11 @@ for f in voxel_files[1:]:
   print("&")
   im = Image.open(f).convert('RGBA')
   pix = im.load()
-  for j in range (im.size[1]):
+  w = im.size[0]
+  h = im.size[1]
+  for j in range (h):
     line = ""
-    for i in range (im.size[0]):
+    for i in range (w):
       r,g,b,a = pix[i,j]
       if (a == 0):
         line += "."

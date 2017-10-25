@@ -1,5 +1,5 @@
 #!/bin/sh
 
 vim -p compiler/legendtopalette compiler/pngtosprite compiler/voxeltosprite compiler/pngtolevel compiler/pzr compiler/pzr_utils.py
-vim -p src/dungeon.predude texts/prelude.txt texts/objects.txt texts/legend.txt texts/layers.txt texts/rules.txt texts/levels.txt
+vim -p src/dungeon.predude texts/prelude.txt texts/objects.txt texts/legend.txt texts/layers.txt texts/parents.txt texts/rules.txt texts/levels.txt
 #vim -p pausewhenstationary.png setuplevel.rule

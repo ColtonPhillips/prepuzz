@@ -1,3 +1,5 @@
+late [action Player | SavePoint ] -> CHECKPOINT
+
 setuplevel.rule
 [> Player no IceState | Ice | no UnmovableObject]-> [> Player | IceState Ice | SuckPlayer]
 late [Player IceState no Ice ] [SuckPlayer] -> [Player ] []

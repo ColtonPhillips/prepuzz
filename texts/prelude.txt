@@ -11,8 +11,8 @@ key_repeat_interval 0.4622
 again_interval 0.29032 (not used)
 realtime_interval 2.68064
 
-view_distance 16
-
+view_distance 10
+(10 - hard, 13 - medium, 16 -easy)
 view_pitch -10
 view_height 0.68
 scale_height 1.25

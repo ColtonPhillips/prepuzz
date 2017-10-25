@@ -1,4 +1,3 @@
-
-CollidableObject = Wall or DoorCollider or Box or HWall or Crate or Demon or CrumbleWall or FalseWallCollider
-UnmovableObject = Wall or DoorCollider or HWall or Demon or FalseWallCollider
+CollidableObject = Wall or DoorCollider or Box or HWall or Crate or Demon or CrumbleWall or FalseWallCollider or SavePointCollider
+UnmovableObject = Wall or DoorCollider or HWall or Demon or FalseWallCollider or SavePointCollider
 MovableObject = Crate or Box

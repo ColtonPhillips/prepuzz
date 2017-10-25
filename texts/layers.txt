@@ -6,7 +6,8 @@ Target
 FalseWall
 Door
 Ghost
-Player, DoorCollider, FalseWallCollider, Wall, Box, Demon, Crate, hWall, CrumbleWall
+SavePoint, SavedPoint
+Player, DoorCollider, FalseWallCollider, Wall, Box, Demon, Crate, hWall, CrumbleWall, SavePointCollider
 Stairs
 DeadCrate
 FireTrail, FireTrailSpawn
@@ -19,3 +20,4 @@ TutorialTextCrate, TutorialTextSidestep, TutorialTextTime, TutorialTextBackup, T
 Key
 SuckPlayer
 IceState
+SavePointActuator

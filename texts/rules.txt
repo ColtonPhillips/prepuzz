@@ -1,4 +1,6 @@
-late [action Player | SavePoint ] -> CHECKPOINT
+viewdir [Player | SavedPoint no SavePointActuator ] -> CHECKPOINT 
++ viewdir [Player | SavedPoint no SavePointActuator ] -> [stationary Player | SavedPoint SavePointActuator no SavePointCollider] 
++ viewdir [Player | SavePoint no SavedPoint no SavePointActuator ] -> [Player| SavedPoint]
 
 setuplevel.rule
 [> Player no IceState | Ice | no UnmovableObject]-> [> Player | IceState Ice | SuckPlayer]

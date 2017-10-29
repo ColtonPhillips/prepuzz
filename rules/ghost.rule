@@ -1,0 +1,3 @@
+[Ghost | ... | Player] -> [> Ghost | ...|  Player]
+[Ghost | Player] -> [> Ghost | Player]
+[Ghost Player] -> [Player]

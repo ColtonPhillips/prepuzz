@@ -1,0 +1,5 @@
+(crates)
+[ >  Player | Crate] -> [  >  Player | > Crate] (player can move a crate around)
+late [Fireball Crate] -> [ DeadCrate] (Fireball can destroy crate) 
+viewdir [action Player | Crate Stairs] -> [Player | DeadCrate Stairs] (player boop a crate) 
+viewdir [action Player | Crate] -> [Player | > Crate] (player boop a crate) 

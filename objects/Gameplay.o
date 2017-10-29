@@ -1,0 +1,13 @@
+Box
+voxel
+throw
+Box.voxel 20
+
+Stairs
+voxel
+Stairs.voxel 6
+
+Player 
+doublestep
+Red
+.

@@ -1,0 +1,3 @@
+viewdir [Player | SavedPoint no SavePointActuator ] -> CHECKPOINT 
++ viewdir [Player | SavedPoint no SavePointActuator ] -> [stationary Player | SavedPoint SavePointActuator no SavePointCollider] 
++ viewdir [Player | SavePoint no SavedPoint no SavePointActuator ] -> [Player| SavedPoint]

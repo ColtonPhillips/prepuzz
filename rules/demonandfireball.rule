@@ -1,0 +1,19 @@
+late [Demon4 | no Fireball] -> [Demon4 | Fireball]
+[Fireball | Demon] -> [< Fireball | Demon]
+[stationary Fireball | ... | Demon] -> [< Fireball | ... | Demon]
+[> Fireball] -> [> Fireball]
+[ Fireball Wall] -> [ Wall]
+late [ Fireball Player] -> restart 
+[> player | < Fireball] -> restart 
+
+(cycle demon animation)
+[Demon5 no DemonFlag] -> [Demon1 DemonFlag]
+[Demon4 no DemonFlag] -> [Demon5 DemonFlag]
+[Demon3 no DemonFlag] -> [Demon4 DemonFlag]
+[Demon2 no DemonFlag] -> [Demon3 DemonFlag]
+[Demon1 no DemonFlag] -> [Demon2 DemonFlag]
+late [DemonFlag] -> []
+
+[FireTrail] -> []
+[FireTrailspawn] -> [FireTrail]
+late [Fireball] -> [Fireball FireTrailSpawn]

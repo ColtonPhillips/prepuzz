@@ -1,77 +1,13 @@
-viewdir [Player | SavedPoint no SavePointActuator ] -> CHECKPOINT 
-+ viewdir [Player | SavedPoint no SavePointActuator ] -> [stationary Player | SavedPoint SavePointActuator no SavePointCollider] 
-+ viewdir [Player | SavePoint no SavedPoint no SavePointActuator ] -> [Player| SavedPoint]
-
 setuplevel.rule
-[> Player no IceState | Ice | no UnmovableObject]-> [> Player | IceState Ice | SuckPlayer]
-late [Player IceState no Ice ] [SuckPlayer] -> [Player ] []
-late [Player IceState Ice ] [no Ice MovableObject SuckPlayer] -> [Player Ice ] [MovableObject]
-[Player IceState Ice | stationary SuckPlayer] -> [> Player > IceState Ice | > SuckPlayer]
-late [Player IceState ] [SuckPlayer UnmovableObject] -> [Player] [UnmovableObject]
-[> Player > IceState Ice | MovableObject > SuckPlayer] -> [> Player > IceState Ice | > MovableObject > SuckPlayer]
-
-viewdir [action Player | CrumbleWall ] -> [Player | DeadCrate]
-viewdir [>  Player | CrumbleWall ] -> [Player | DeadCrate]
-
-[Door no DoorCollider] -> []
-[DoorCollider no Door] -> []
-viewdir [Key | Door] [action Player] ->[|v Door] [Player]
-[no CollidableObject |Key < Player] -> [| < Key < Player]
-
-
-[Ghost | ... | Player] -> [> Ghost | ...|  Player]
-[Ghost | Player] -> [> Ghost | Player]
-[Ghost Player] -> [Player]
-
-[FalseWall no FalseWallCollider] -> []
-[FalseWallCollider no FalseWall] -> []
-viewdir [FalseWall | action Player ] -> [v FalseWall  | Player] 
-[FalseWall | moving Player ] -> [v FalseWall  | Player] 
-
-late [Demon4 | no Fireball] -> [Demon4 | Fireball]
-[Fireball | Demon] -> [< Fireball | Demon]
-[stationary Fireball | ... | Demon] -> [< Fireball | ... | Demon]
-[> Fireball] -> [> Fireball]
-[ Fireball Wall] -> [ Wall]
-late [ Fireball Player] -> restart 
-[> player | < Fireball] -> restart 
-
-(cycle demon animation)
-[Demon5 no DemonFlag] -> [Demon1 DemonFlag]
-[Demon4 no DemonFlag] -> [Demon5 DemonFlag]
-[Demon3 no DemonFlag] -> [Demon4 DemonFlag]
-[Demon2 no DemonFlag] -> [Demon3 DemonFlag]
-[Demon1 no DemonFlag] -> [Demon2 DemonFlag]
-late [DemonFlag] -> []
-
-(crates)
-[ >  Player | Crate] -> [  >  Player | > Crate] (player can move a crate around)
-late [Fireball Crate] -> [ DeadCrate] (Fireball can destroy crate) 
-viewdir [action Player | Crate Stairs] -> [Player | DeadCrate Stairs] (player boop a crate) 
-viewdir [action Player | Crate] -> [Player | > Crate] (player boop a crate) 
-
-(player can move a box around)
-[>  Player | Box no Target] -> [>  Player | > Box]     
-viewdir [^ player | Box no Target] -> [^ Player | ^ Box]
-viewdir [v player | Box no Target] -> [v Player | v Box]
-viewdir [< player | Box no target] -> [< Player | < Box]
-
-(player can boop the cube)
-viewdir [action Player | Box] -> [Player | > Box]
-
 hudfollowsplayer.rule
-
-[FireTrail] -> []
-[FireTrailspawn] -> [FireTrail]
-late [Fireball] -> [Fireball FireTrailSpawn]
-
-[Player TutorialTextCrate] -> [Player] message Walk into Crates or Press Space to push them.
-[Player TutorialTextTime] -> [Player] message Fireballs will kill you. Evade them, and press Space to allow them to move first.
-[Player TutorialTextSidestep] -> [Player] message Face the Hexahedron and Press A and D to sidestep the it out of the corners.
-[Player TutorialTextBackup] -> [Player] message Face the Hexahedron and Press Down Arrow or S to pull it out of the indentation.
-[Player TutorialTextAlter] -> [Player] message "These must be the 'Black Alters'!", you shriek.
-[Box no Target] [Player TutorialTextStairs] -> [Box] [Player] message "The Stairs! This is where I need to go... but not yet..."
-[Player TutorialTextStairs] -> [Player] message "The Stairs! I can ascend to the next level!"
-
-[stationary Player Stairs] [Box no Target] -> [Player Stairs] [Box] message "To open the Staircase, Move Every Hexahedron onto a Black Alter""
-[stationary Player Target] -> [Player Target] message "This is the Black Alter. Hexahedrons go here."
+Checkpoint.rule
+slipice.rule
+crumblewall.rule
+doorandkey.rule
+ghost.rule
+falsewall.rule
+hudfollowsplayer.rule
+tutorial.rule
+demonandfireball.rule
+crate.rule
+box.rule

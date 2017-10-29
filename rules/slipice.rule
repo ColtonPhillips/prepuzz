@@ -1,0 +1,6 @@
+[> Player no IceState | Ice | no UnmovableObject]-> [> Player | IceState Ice | SuckPlayer]
+late [Player IceState no Ice ] [SuckPlayer] -> [Player ] []
+late [Player IceState Ice ] [no Ice MovableObject SuckPlayer] -> [Player Ice ] [MovableObject]
+[Player IceState Ice | stationary SuckPlayer] -> [> Player > IceState Ice | > SuckPlayer]
+late [Player IceState ] [SuckPlayer UnmovableObject] -> [Player] [UnmovableObject]
+[> Player > IceState Ice | MovableObject > SuckPlayer] -> [> Player > IceState Ice | > MovableObject > SuckPlayer]

@@ -1,0 +1,8 @@
+(player can move a box around)
+[>  Player | Box no Target] -> [>  Player | > Box]     
+viewdir [^ player | Box no Target] -> [^ Player | ^ Box]
+viewdir [v player | Box no Target] -> [v Player | v Box]
+viewdir [< player | Box no target] -> [< Player | < Box]
+
+(player can boop the cube)
+viewdir [action Player | Box] -> [Player | > Box]

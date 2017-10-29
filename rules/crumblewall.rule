@@ -1,0 +1,2 @@
+viewdir [action Player | CrumbleWall ] -> [Player | DeadCrate]
+viewdir [>  Player | CrumbleWall ] -> [Player | DeadCrate]

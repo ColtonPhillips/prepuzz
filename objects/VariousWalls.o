@@ -6,3 +6,6 @@ hWall
 voxel
 hWall.voxel 17
 
+CrumbleWall
+wall
+crumblewall.png

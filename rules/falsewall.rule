@@ -1,0 +1,4 @@
+[FalseWall no FalseWallCollider] -> []
+[FalseWallCollider no FalseWall] -> []
+viewdir [FalseWall | action Player ] -> [v FalseWall  | Player] 
+[FalseWall | moving Player ] -> [v FalseWall  | Player] 

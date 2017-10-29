@@ -1,63 +1,11 @@
-SavePointActuator
-Red
-.
-
-SavePoint
-billboard
-SavePoint.png
-
-SavedPoint
-billboard
-SavedPoint.png
-
-SavePointCollider
-Blue
-.
-
-IceState
-Blue
-.
-
-SuckPlayer
-Red 
-0
-
-Ice
-ice.png
-
 CrumbleWall
 wall
 crumblewall.png
-
-Key
-billboard
-key.png
-
-Door
-voxel
-easein
-Door.voxel 3
-
-DoorCollider
-Red
-.
 
 Ghost
 sprite
 easein
 ghost.png
-
-Background
-Red
-.
-
-BackgroundVisuals
-voxel
-Grass.voxel 22
-
-Ceiling
-voxel
-Roof.voxel 0 17
 
 Box
 voxel
@@ -67,15 +15,6 @@ Box.voxel 20
 Hud
 hud
 hud.png
-
-
-Wall 
-wall
-wall.png
-
-hWall
-voxel
-hWall.voxel 17
 
 Stairs
 voxel

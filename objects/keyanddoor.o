@@ -1,0 +1,12 @@
+Key
+billboard
+key.png
+
+Door
+voxel
+easein
+Door.voxel 3
+
+DoorCollider
+Red
+.

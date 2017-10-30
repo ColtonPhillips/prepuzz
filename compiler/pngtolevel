@@ -8,6 +8,7 @@ legend_dict = get_legend_dict()
 level_file = levels_dir+sys.argv[1]
 pix, w, h, col_set = pixels_whc(level_file)
 line = ""
+print()
 for j in range(h):
   line = ""
   for i in range(w):
@@ -17,3 +18,4 @@ for j in range(h):
       continue
     line += legend_dict[hcolor.lower()]       
   print (line)
+print ()

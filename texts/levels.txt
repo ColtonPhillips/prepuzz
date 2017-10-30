@@ -1,6 +1,23 @@
 message Thank you for coming to my presentation!
 presentation.level
-
+#####
+#777#
+#...#
+#...#
+#.O.#
+#...#
+#...#
+#...#
+#.*.#
+#...#
+#.P.#
+#...#
+#####
+tutorial.level
+neg1.level
+neg2.level
+level0.level
+level1.level
 (Exposition dump)
 
 message Credits: Programming and Design: Colton Phillips. Sound:Adam Caflisch. Art: Rose Dubord-Goulet. Art and Design: Brandon Duncan.
@@ -50,22 +67,6 @@ message Press the Left and Right Arrow keys to Rotate your character.
 message You are in the Golem's Magical Castle. If you wish to escape, you must ascend.
 message Before the Staircase will open, you must place every Hexahedron into a Black Alter. Good luck.
 message A tutorial level loads into existence and you begin to fumble with the gameplay mechanics.
-neg2.level
-
-neg1.level
-#####
-#777#
-#...#
-#...#
-#.O.#
-#...#
-#...#
-#...#
-#.*.#
-#...#
-#.P.#
-#...#
-#####
 message Press the Space button to enact the flow of time.
 message Escape the cursed basement or Lilah will die.
 message The Hexahedron can be maneuvered, in 3 unique ways:
@@ -73,8 +74,5 @@ message 1) You can push the Hexahedron
 message 2) You can slide the Hexahedron sideways, while holding it.
 message 3) You can push the Hexahedron and other objects by pressing the Space Bar when viewing it.
 message To beat this tutorial, find all 3 Hexahedrons and lock them into the 3 Black Alters
-tutorial.level
 message You complete the tutorial section. The game proceeds to Level 1.
 message "There will be no hints from here on out. Good luck.", the game reads.
-level0.level
-level1.level

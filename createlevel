@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cp out/palette.png levels/new.png
+open -a pixen levels/new.png

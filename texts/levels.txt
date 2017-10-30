@@ -1,7 +1,7 @@
-(Exposition dump)
-neg2.level
+message Thank you for coming to my presentation!
+presentation.level
 
-neg1.level
+(Exposition dump)
 
 message Credits: Programming and Design: Colton Phillips. Sound:Adam Caflisch. Art: Rose Dubord-Goulet. Art and Design: Brandon Duncan.
 message You are about to squat down in your remarkable hovel to ingest some fine content.
@@ -50,6 +50,9 @@ message Press the Left and Right Arrow keys to Rotate your character.
 message You are in the Golem's Magical Castle. If you wish to escape, you must ascend.
 message Before the Staircase will open, you must place every Hexahedron into a Black Alter. Good luck.
 message A tutorial level loads into existence and you begin to fumble with the gameplay mechanics.
+neg2.level
+
+neg1.level
 #####
 #777#
 #...#

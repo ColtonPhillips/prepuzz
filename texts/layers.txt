@@ -7,7 +7,7 @@ FalseWall
 Door
 Ghost
 SavePoint, SavedPoint
-Player, DoorCollider, FalseWallCollider, Wall, Box, Demon, Crate, hWall, CrumbleWall, SavePointCollider
+Player, DoorCollider, FalseWallCollider, Wall, Box, Demon, Crate, hWall, CrumbleWall, SavePointCollider, StrongWall
 Stairs
 DeadCrate
 FireTrail, FireTrailSpawn

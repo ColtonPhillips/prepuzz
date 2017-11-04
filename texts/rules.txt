@@ -1,3 +1,5 @@
+[ > Player | StrongWall ] -> [ Player | > StrongWall ]
+
 setuplevel.rule
 hudfollowsplayer.rule
 Checkpoint.rule

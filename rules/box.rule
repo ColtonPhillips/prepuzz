@@ -5,4 +5,4 @@ viewdir [v player | Box no Target] -> [v Player | v Box]
 viewdir [< player | Box no target] -> [< Player | < Box]
 
 (player can boop the cube)
-viewdir [action Player | Box] -> [Player | > Box]
+viewdir [action Player | Box no Target] -> [Player | > Box]

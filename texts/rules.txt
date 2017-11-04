@@ -1,4 +1,7 @@
 [ > Player | StrongWall ] -> [ Player | > StrongWall ]
+viewdir [^ player | StrongWall ] -> [^ Player | ^ StrongWall]
+viewdir [v player | StrongWall ] -> [v Player | v StrongWall]
+viewdir [< player | StrongWall ] -> [< Player | < StrongWall]
 
 setuplevel.rule
 hudfollowsplayer.rule

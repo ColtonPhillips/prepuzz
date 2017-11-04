@@ -2,7 +2,8 @@ late [Demon4 | no Fireball] -> [Demon4 | Fireball]
 [Fireball | Demon] -> [< Fireball | Demon]
 [stationary Fireball | ... | Demon] -> [< Fireball | ... | Demon]
 [> Fireball] -> [> Fireball]
-[ Fireball Wall] -> [ Wall]
+[ Fireball FireStoppingObject] -> [ FireStoppingObject]
+[> FireStoppingObject| < Fireball] -> [> FireStoppingObject|]
 late [ Fireball Player] -> restart 
 [> player | < Fireball] -> restart 
 

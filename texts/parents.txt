@@ -1,3 +1,4 @@
 CollidableObject = Wall or DoorCollider or Box or HWall or Crate or Demon or CrumbleWall or FalseWallCollider or SavePointCollider or StrongWall
+FireStoppingObject = Wall or StrongWall
 UnmovableObject = Wall or DoorCollider or HWall or Demon or FalseWallCollider or SavePointCollider
 MovableObject = Crate or Box or StrongWall

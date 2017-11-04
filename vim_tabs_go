@@ -1,5 +1,6 @@
 #!/bin/sh
 
+cat out/sorted_legend.txt | pbcopy
 rm -r compiler/__pycache__
 vim -p compiler/*
 vim -p src/*

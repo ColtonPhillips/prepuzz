@@ -90,10 +90,30 @@ def write_list_to_file(li,fi):
   with open(fi, 'w') as out_file:
       out_file.write(out_string)
 
+def multipleReplace(text, wordDict):
+  for key in wordDict:
+    text = text.replace(key, wordDict[key])
+  return text
+
+def parse_legend_lines(lines):
+  out = []
+  macro_dict = {}
+  for line in lines:
+    if line[0] == "=":
+      line_list = line.strip().split("=")
+      k,v = line_list[1] , line_list[2]
+      macro_dict[k] = v
+      continue
+    line = multipleReplace(line,macro_dict)
+    out.append(line)
+  return out
+
 def get_legend_dict():
   legend_dict = {}
   legend_lines = file_to_lines(legend_file)
   for line in legend_lines:
+    if line[0] == "=":
+      continue
     line_list = line.strip().split(" ")
     color = line_list[-1].lstrip("(").rstrip(")")
     legend_dict[color.lower()] = line_list[0]
@@ -101,6 +121,7 @@ def get_legend_dict():
 
 def write_sorted_legend():
   legend_lines = file_to_lines(legend_file)
+  legend_lines = parse_legend_lines(legend_lines)
   legend_lines.sort(key = lambda x: x.strip().split(" ")[-1])
   write_list_to_file(legend_lines,out_dir+"sorted_legend.txt")
 

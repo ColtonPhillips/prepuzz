@@ -11,6 +11,8 @@ for line in lines:
   if (".txt" in line):
     text_file = line.strip()
     text_lines = file_to_lines(text_dir+text_file)
+    if ("legend.txt" in line):
+      text_lines = parse_legend_lines(text_lines)
     tlines.extend(text_lines) 
   elif (".object" in line):
     object_files = files_in_folder(".o",objects_dir)
